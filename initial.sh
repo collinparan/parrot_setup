@@ -13,6 +13,7 @@ sudo apt-get install libgl1;
 sudo apt-get install libpq-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev;
 sudo apt-get install python3.8-dev;
 sudo apt install build-essential;
+pip install pyzmq protobuf piexif;
 pip install clang==6.0.0.2;
 pip install pyparsing;
 echo "Install Olympe";
