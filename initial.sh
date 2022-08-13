@@ -1,0 +1,21 @@
+# Tested on Rasbperry Pi with Ubuntu 20.04
+echo "Installing updates & setup for python apt..."; 
+(sudo apt-get update && sudo apt install software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa);
+sudo ln -s /usr/bin/python3.8 /usr/bin/python;
+sudo ln -s /usr/bin/python3.8 /usr/bin/python3;
+sudo apt-get install python3.8-distutils;
+echo "Installing pip..."; 
+(sudo apt install python3-pip);
+echo "Adding symlink to pip..."; 
+(sudo ln -s /usr/bin/pip3 /usr/bin/pip);
+echo "Install Ubuntu dependencies";
+sudo apt-get install libgl1;
+sudo apt-get install libpq-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev;
+sudo apt-get install python3.8-dev;
+sudo apt install build-essential;
+pip install clang==6.0.0.2;
+pip install pyparsing;
+echo "Install Olympe";
+pip install parrot-olympe;
+echo "Test Olympe";
+python -c 'import olympe; print("Installation OK")';
