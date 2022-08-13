@@ -1,5 +1,6 @@
 # Tested on Rasbperry Pi with Ubuntu 20.04
 # Docker option https://forum.developer.parrot.com/t/official-olympe-docker-image/16369
+# https://blog.fearcat.in/a?ID=01800-d12ca3ac-2f2b-4e26-a5c3-275674efa050
 echo "Installing updates & setup for python apt..."; 
 (sudo apt-get update && sudo apt install software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa);
 sudo ln -s /usr/bin/python3.8 /usr/bin/python;
