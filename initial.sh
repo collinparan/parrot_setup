@@ -25,3 +25,4 @@ echo "Install Olympe";
 pip install parrot-olympe;
 echo "Test Olympe";
 python -c 'import olympe; print("Installation OK")';
+echo "Complete";
