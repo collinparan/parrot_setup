@@ -1,10 +1,13 @@
 # Tested on Rasbperry Pi with Ubuntu 20.04
 # Docker option https://forum.developer.parrot.com/t/official-olympe-docker-image/16369
 # https://blog.fearcat.in/a?ID=01800-d12ca3ac-2f2b-4e26-a5c3-275674efa050
-sudo apt update && sudo apt install software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt install python3.9&& sudo apt install python3.8;
+sudo apt update && sudo apt install software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt install python3.9;
 echo "Installing updates & setup for python apt..."; 
-sudo rm -f /usr/bin/python && sudo ln -s /usr/bin/python3.9 /usr/bin/python;
-sudo apt-get install python3.10-distutils;
+sudo rm -f /usr/bin/python;
+sudo ln -s /usr/bin/python3.9 /usr/bin/python;
+sudo rm -f /usr/bin/python3;
+sudo ln -s /usr/bin/python3.9 /usr/bin/python;
+sudo apt-get install python3.9-distutils;
 echo "Installing pip..."; 
 (sudo apt install python3-pip);
 echo "Adding symlink to pip..."; 
